@@ -1,197 +1,76 @@
 body {
-    background-image: linear-gradient(to bottom right, rgb(209, 225, 248), rgb(243, 218, 255));
+    margin: 0px;
+    background-color: darkseagreen;
 }
 
-#title_ {
-    color: black;
-    margin-left: 0.025%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 350%;
+.title {
+    margin: none;
+    text-align: center;
 }
 
-.main_body {
-  margin-left: 60px;
-}
-/* SIDEBAR CSS*/
-
-.side_nav {
-  width: 50px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 5px;
-  background: rgb(148, 148, 148, 0.7);
-  backdrop-filter: blur(5px); 
-  display: flex;
-  justify-content: flex;
-  flex-direction: column;
-  transition: width 0.25s;
+.title H1 {
+    font-size: 64px;
+    text-decoration: underline;
 }
 
-.user {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 40px;
-  font-size: 12px;
-  border-radius: 8px;
-  width: auto;
-  margin-left: 5px;
+.title p {
+    margin: none;
+    padding: none;
+    font-size: 16px;
+    color: #222222;
 }
 
-.user div {
-  display: none;
+.news {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
 }
 
-.user h2 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 28px;
-  white-space: nowrap;
+/* NAVIGATION BAR */
+.taskbar li{
+    color: aliceblue;
+    margin-right: 100px;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
 }
 
-
-.user_img {
-  width: 40px;
-  border-radius: 50%;
-  margin-top: 20px;
+.taskbar ul{
+    list-style-type: none;
+    background-color: hsl(348, 83%, 47%);
+    padding: none;
+    margin: none;
+    overflow: hidden;
 }
 
-/* list */
-
-ul {
-  margin-top: 0px;
-  list-style: none;
-  padding: 1px;
+.taskbar li {
+    float: left;
 }
 
-/*ul li {
-  margin: 30px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+.taskbar li:hover {
+    background-color: hsl(348, 100%, 55%);
 }
 
-ul li img {
-  width: 30px;
-  margin-right: 0px;
+/* NAVIGATION BAR END */
+
+.news1, .news2, .news3, .news4 {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    
+    
 }
 
-ul li p {
-  white-space: nowrap;
-  display: none;
-}*/
-
-ul li {
-  margin: 30px 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  cursor: pointer;
-  overflow: hidden;
+.news_title {
+    text-align: center;
 }
 
-ul li img {
-  width: 30px;
-  margin: 0 10px;
-}
-
-.user_img, img {
-  display: block;
-}
-
-/* hover */
-
-.side_nav:hover {
-  width: 180px;
-}
-
-.side_nav:hover .user div {
-  display: block;
-}
-
-.side_nav:hover .user {
-  width: 100%;
-  margin: 0px;
-  overflow: hidden;
-}
-
-.side_nav:hover .user_img {
-  width: 40px;
-  margin-left: 5px;
-}
-
-.side_nav:hover ul li p {
-  justify-content: flex-end;
-  width: auto;
-  /*display: inline-block;
-  vertical-align: middle;
-  margin: 0;*/
-}
-
-.side_nav:hover ul li img {
-  width: 30px;
-  margin: 0 10px;
-}
-
-.side_nav:hover ul li {
-  justify-content: flex-start;
-}
-
-/* NEWS CSS */
-.news-container {
-  font-size: 20px;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 20px;
-}
-
-#news1, #news2, #news3,#news4 {
-  /* add styling for news items */
-  padding: 0px;
-  border: 1px solid #ddd;
-}
-
-.temp {
-  align-items: center;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .news-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    #news1, #news2, #news3, #news4 {
-        /* add styling for news items */
-        padding: 10px;
-        border: 1px solid #ddd;
-    }
-}
-
-/* animations */
-.devlogs:hover {
-  animation: shake 2.5s infinite;
-}
-
-@keyframes shake {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  2% {
-    transform: translate(-2px, 2px);
-  }
-  4% {
-    transform: translate(2px, -2px);
-  }
-  6% {
-    transform: translate(-2px, -2px);
-  }
-  8% {
-    transform: translate(2px, 2px);
-  }
+.news_body {
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
 }
