@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color: darkseagreen;
+    background-image: linear-gradient(#cce9fc, #fdb4ff);
 }
 
 .title {
@@ -10,12 +10,12 @@ body {
 
 .title H1 {
     font-size: 64px;
+    margin: 0px;
     text-decoration: underline;
 }
 
 .title p {
-    margin: none;
-    padding: none;
+    margin: 0px;
     font-size: 16px;
     color: #222222;
 }
@@ -29,7 +29,7 @@ body {
 /* NAVIGATION BAR */
 .taskbar li{
     color: aliceblue;
-    margin-right: 100px;
+    margin-right: 10px;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -58,8 +58,8 @@ body {
     background-color: #f1f1f1;
     border: 1px solid black;
     border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
+    margin: 2.5px;
+    padding: 5px;
     
     
 }
@@ -69,8 +69,14 @@ body {
 }
 
 .news_body {
-    margin: 3px;
+    margin: 7px;
+    margin-right: 5px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     font-size: 20px;
 }
+
+
+/* SIDE BAR */
+
